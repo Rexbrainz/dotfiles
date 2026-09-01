@@ -139,6 +139,9 @@ fi
 export REQUESTS_CA_BUNDLE="/opt/homebrew/Cellar/azure-cli/2.89.1/libexec/lib/python3.14/site-packages/certifi/cacert.pem"
 export SSL_CERT_FILE="/opt/homebrew/Cellar/azure-cli/2.89.1/libexec/lib/python3.14/site-packages/certifi/cacert.pem"
 
+# Postgres CLI tools
+export PATH="/opt/homebrew/opt/postgresql@16/bin:$PATH"
+
 # Force Zsh to cleanly redraw the active prompt on window resize
 TRAPWINCH() {
   if [[ -o interactive ]]; then
